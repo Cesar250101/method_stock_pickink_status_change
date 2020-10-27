@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_extra-addons/method_stock_pickink_status_change_extra-addons/method_stock_pickink_status_change,extra-addons/method_stock_pickink_status_change.extra-addons/method_stock_pickink_status_change,model_extra-addons/method_stock_pickink_status_change_extra-addons/method_stock_pickink_status_change,,1,0,0,0

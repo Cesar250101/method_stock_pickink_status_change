@@ -1,0 +1,20 @@
+<odoo>
+  <data>
+
+    <!-- Inherit Form View to Modify it -->
+    <record id="method_stock_pickink_status_change.view_picking_form" model="ir.ui.view">
+        <field name="name">method.stock.pickink.status.change.view.picking.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//button[@name='action_toggle_is_locked']" position="after">
+                <button name="action_state_change" attrs="{'invisible': [('state', '=', 'draft')]}"  string="Cambiar a Borrador" class="oe_highlight" groups="stock.group_stock_manager" type="object"/>
+                <!--attrs="{'invisible': [('is_locked', '=', True)]}"-->
+            </xpath>
+
+        </field>
+    </record>
+    
+  </data>
+</odoo>
